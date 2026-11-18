@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "nuit",
+  "version": "${version}",
+  "name": "Nuit",
+  "description": "Adds custom skybox support to Minecraft",
+  "authors": [
+    "AMereBagatelle",
+    "FlashyReese"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/nuit",
+    "sources": "https://github.com/Nuit-Team/Nuit"
+  },
+  "license": "MIT",
+  "icon": "assets/clickcrystals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.itzispyder.clickcrystals.client.ClickCrystalsClient"
+    ],
+    "main": [
+      "io.github.itzispyder.clickcrystals.ClickCrystals"
+    ],
+    "modmenu": [
+      "io.github.itzispyder.clickcrystals.client.system.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  },
+  "mixins": [
+    "clickcrystals.mixins.json"
+  ],
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/nuit"
+      }
+    }
+  }
+}
